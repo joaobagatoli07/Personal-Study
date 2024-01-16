@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Bagatoli</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: #0e0f10;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .tabela-principal{
+            height:100vh; 
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .menu{
+            background-color: #1D1D22; 
+            width: 10%; 
+            padding: 20px;
+            vertical-align: top;
+            text-align: center;
+            position: fixed;
+            height: 100%;
+        }
+
+        .menu a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu i{
+            font-size: 30px;
+        }
+
+        .menu a:hover{
+            color: #25ca7f;
+        }
+
+        .menu p{
+            margin-bottom: 30px;
+        }
+
+        .menu #people{
+            margin-top: 100px;
+        }
+
+        .corpo{
+            padding-left: 25%;
+            padding-right: 25%;
+            vertical-align: top;
+        }
+
+        .titulo{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .card-box{
+            display: flex;
+        }
+
+        .card-box-img img{
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .card-box-body{
+            margin-left: 20px;
+        }
+
+        #about_me_section,
+        #experience_section,
+        #contact_section{
+            min-height: 1000px;
+            scroll-margin-top: 50px;
+        }
+
+        .service-container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .service-container .service-item{
+            width: calc(33.3% - 32px);
+            margin: 16px;
+        }
+
+        .service-container .service-item .service-item-card{
+            border: 1px solid black;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-container .service-item .service-item-card:hover{
+            border: 1px solid #25ca7f;
+        }
+
+        .service-container .service-item .service-item-card .service-item-card-icon{
+            background-color: #0e0f10;
+            height: 80px;
+            border: 1px solid black;
+            width: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-container .service-item .service-item-card .service-item-card-icon i{
+            font-size: 30px;
+        }
+
+        .service-container .service-item .service-item-card .service-item-card-title{
+            margin-top: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .service-container .service-item .service-item-card .service-item-card-description{
+            text-align: center;
+        }
+
+        .flexbox{
+            display: flex;
+            gap: 30px;
+        }
+
+        .flexbox .flexbox-item{
+            width: 50%;
+        }
+
+        .card{
+            background-color: #070708;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .timeline-item{
+            border-left: 1px solid #25ca7f;
+            padding-left: 32px;
+            position: relative;
+        }
+
+        .timeline-item-period{
+            font-size: 12px;
+            color: #25ca7f;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .timeline-item-marker{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 8px;
+            left: -8px;
+        }
+
+        .timeline-item-marker-circle{
+            height: 15px;
+            width: 15px;
+            background-color:#25ca7f;
+            border-radius: 50%;
+        }
+
+        .timeline-item-marker-line{
+            height: 1px;
+            width: 15px;
+            background-color:#25ca7f;
+        }
+
+        .progress-bar{
+            background-color: #0e0f10;
+            height: 8px;
+            border-radius: 8px;
+            position: relative;
+            margin-bottom: 60px;
+        }
+
+        .progress-bar-title,
+        .progress-bar-done-text{
+            position: absolute;
+            top: -30px;
+        }
+
+        .progress-bar-done-text{
+            right: 0px;
+        }
+
+        .progress-bar-done{
+            background-color: #25ca7f;
+            height: 100%;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .progress-bar-done-check{
+            height: 20px;
+            width: 20px;
+            border: 4px solid #25ca7f;
+            border-radius: 50%;
+            position: absolute;
+            right: 0px;
+            top: -6px;
+            background-color: #0e0f10;
+        }
+
+        .contact-item{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-item-icon{
+            font-size: 40px;
+            border: 1px solid #25ca7f;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+	        position: relative;
+            margin-top: 50px;
+            margin-left: 53px;
+            font-size: 8px;
+        }
+
+        .content h2 {
+            color: #fff;
+            font-size: 8em;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+
+        .content h2:nth-child(1) {
+            color: transparent;
+            -webkit-text-stroke: 2px #25ca7f;
+        }
+
+        .content h2:nth-child(2) {
+            color: #25ca7f;
+            animation: animate 4s ease-in-out forwards;
+        }
+
+        @keyframes animate {
+            0%,
+            100% {
+                clip-path: polygon(
+                    0% 45%,
+                    16% 44%,
+                    33% 50%,
+                    54% 60%,
+                    70% 61%,
+                    84% 59%,
+                    100% 52%,
+                    100% 100%,
+                    0% 100%
+                );
+            }
+
+            50% {
+                clip-path: polygon(
+                    0% 60%,
+                    15% 65%,
+                    34% 66%,
+                    51% 62%,
+                    67% 50%,
+                    84% 45%,
+                    100% 46%,
+                    100% 100%,
+                    0% 100%
+                );
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <table class="tabela-principal">
+
+        <tr>
+            <td class="menu">
+        
+                <section>
+                    <div class="content">
+                        <h2>CV</h2>
+                        <h2>CV</h2>
+                    </div>
+                </section>
+
+                <p id="people">
+                    <a href="#about_me_section">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </a>
+                </p>
+
+                <p>
+                    <a href="#experience_section">
+                        <i class="fa-solid fa-address-book"></i>
+                    </a>
+                </p>
+
+                <p>
+                    <a href="#contact_section">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </p>
+                
+            </td>
+
+            <td class="corpo">
+
+                <div id="about_me_section">
+
+                    <h1 class="titulo">Quem sou eu</h1>
+
+                    <div class="card-box card">
+                        <div class="card-box-img">
+                            <img src="perfil.jpeg">
+                        </div>
+
+                        <div class="card-box-body">
+                            <h3>João Bagatoli</h3>
+                            <p>Joinville, Brasil</p>
+                            <p>Eu me chamo João Bagatoli, atualmente moro no Brasil e trabalho como Desenvolvedor de Sistemas</p>
+                            <p>Meu objetivo é continuar investindo em minha carreira e alcançar voos cada vez mais altos</p>
+                        </div>
+                    </div>
+
+                        <h2 class="titulo">Áreas de Atuação</h2>
+
+                        <div class="service-container">
+
+                            <div class="service-item">
+
+                                <div class="service-item-card card">
+                                    <div class="service-item-card-icon">
+                                        <i class="fa-solid fa-desktop"></i>
+                                    </div>
+
+                                    <div class="service-item-card-title">
+                                        <h2>Desenvolvedor Front-End</h2>
+                                    </div>
+
+                                    <div class="service-item-card-description">
+                                        <span>HTML e CSS</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="service-item">
+
+                                <div class="service-item-card card">
+                                    <div class="service-item-card-icon">
+                                        <i class="fa-solid fa-cogs"></i>
+                                    </div>
+
+                                    <div class="service-item-card-title">
+                                        <h2>Desenvolvedor Back-End</h2>
+                                    </div>
+
+                                    <div class="service-item-card-description">
+                                        <span>Nodejs e C#</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="service-item">
+
+                                <div class="service-item-card card">
+                                    <div class="service-item-card-icon">
+                                        <i class="fa-solid fa-mobile-alt"></i>
+                                    </div>
+
+                                    <div class="service-item-card-title">
+                                        <h2>Desenvolvedor Mobile</h2>
+                                    </div>
+
+                                    <div class="service-item-card-description">
+                                        <span>React Native</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="service-item">
+
+                                <div class="service-item-card card">
+                                    <div class="service-item-card-icon">
+                                        <i class="fa-solid fa-database"></i>
+                                    </div>
+
+                                    <div class="service-item-card-title">
+                                        <h2>Banco de Dados</h2>
+                                    </div>
+
+                                    <div class="service-item-card-description">
+                                        <span>MySQL</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="service-item">
+
+                                <div class="service-item-card card">
+                                    <div class="service-item-card-icon">
+                                        <i class="fa-solid fa-cogs"></i>
+                                    </div>
+
+                                    <div class="service-item-card-title">
+                                        <h2>Outros</h2>
+                                    </div>
+
+                                    <div class="service-item-card-description">
+                                        <span>Edição de Vídeo</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                </div>
+
+                <div id="experience_section">
+
+                    <h1 class="titulo">Resumo</h1>
+
+                    <div class="flexbox">
+                        <div class="flexbox-item">
+                            <h2 class="titulo">Educação</h2>
+                                <div class="card">
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-marker">
+                                            <div class="timeline-item-marker-circle"></div>
+                                            <div class="timeline-item-marker-line"></div>
+                                        </div>
+                                        <h3>Curso Técnico</h3>
+                                        <p class="timeline-item-period">
+                                            <i class="fa-solid fa-calendar-days"></i> 2021 - 2023 | Desenvolvimento de Sistemas
+                                        </p>
+                                        <p>Escola S Sesi Senai</p>
+                                </div>
+                        </div>
+                    </div>
+
+                        <div class="flexbox-item">
+                            <h2 class="titulo">Experiência Profissional</h2>
+                                <div class="card">
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-marker">
+                                            <div class="timeline-item-marker-circle"></div>
+                                            <div class="timeline-item-marker-line"></div>
+                                        </div>
+                                        <h3>Estagiário Front-End</h3>
+                                        <p class="timeline-item-period">
+                                            <i class="fa-solid fa-calendar-days"></i> Desde Abril de 2023 | Easy Communication & Technology
+                                        </p>
+                                        <p>Responsável por preparar tutoriais como material de marketing, utilizando lógica de programação aplicada à uma plataforma low-code</p>
+                                    </div>
+                                </div>
+                        </div>
+
+                </div>
+
+                    <h2 class="titulo">Tecnologias</h2>
+                        <div class="card" style="padding-top: 60px;">
+                            <div class="progress-bar">
+                                <div class="progress-bar-title">
+                                    HTML5
+                                </div>
+
+                                <div class="progress-bar-done" style="width: 90%;">
+                                    <div class="progress-bar-done-text">
+                                        90%
+                                    </div>
+
+                                    <div class="progress-bar-done-check"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress-bar">
+                                <div class="progress-bar-title">
+                                    CSS3
+                                </div>
+
+                                <div class="progress-bar-done" style="width: 90%;">
+                                    <div class="progress-bar-done-text">
+                                        90%
+                                    </div>
+
+                                    <div class="progress-bar-done-check"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress-bar">
+                                <div class="progress-bar-title">
+                                    JavaScript
+                                </div>
+
+                                <div class="progress-bar-done" style="width: 40%;">
+                                    <div class="progress-bar-done-text">
+                                        40%
+                                    </div>
+
+                                    <div class="progress-bar-done-check"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress-bar">
+                                <div class="progress-bar-title">
+                                    Ferramentas Low/No Code
+                                </div>
+
+                                <div class="progress-bar-done" style="width: 98%;">
+                                    <div class="progress-bar-done-text">
+                                        98%
+                                    </div>
+
+                                    <div class="progress-bar-done-check"></div>
+                                </div>
+                            </div>
+                        </div>
+                
+                <div id="contact_section">
+                    <h1 class="titulo">Contato</h1>
+
+                    <div class="card flexbox">
+                        <div class="contact-item" style="margin-left: 35px;">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+
+                            <div class="contact-item-value">
+                                joaovitorbagatoli07@gmail.com
+                            </div>
+
+                            <div class="contact-item-description">
+                                Email
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+
+                            <div class="contact-item-value">
+                                @joao_bagatoli
+                            </div>
+
+                            <div class="contact-item-description">
+                                Instagram
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+
+                            <div class="contact-item-value">
+                                +55 (47) 98467-0620
+                            </div>
+
+                            <div class="contact-item-description">
+                                Phone
+                            </div>
+                        </div>
+
+                    </div>
+                  
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
