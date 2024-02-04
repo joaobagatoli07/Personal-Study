@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background randômico</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-size: cover;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(images/1.jpg);">
+
+    <h1>Atualize a página para alterar a imagem de fundo</h1>
+
+    <script>
+        ; (function () {
+
+            function getRandomNumber(inicio, fim, integer = true){
+                let r = Math.random() * (fim - inicio + 1) + inicio
+                return integer ? parseInt(r) : r
+            }
+
+            let randomNumber = getRandomNumber(1, 5)
+
+            document.body.style.backgroundImage = `url(images/${randomNumber}.jpg)`
+            
+        })()
+
+    </script>
+
+</body>
+
+</html>
