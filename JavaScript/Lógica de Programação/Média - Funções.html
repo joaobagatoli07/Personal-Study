@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Aluno</title>
+</head>
+
+<body>
+
+    <button onclick="mostrarAluno()">Escolher aluno</button>
+
+    <h1 id="aluno"></h1>
+
+    <button id="inserir" style="display: none;" onclick="inserirNotas()">Inserir notas</button>
+
+    <h3 id="media"></h3>
+
+    <script>
+        "use strict"
+        const nome = document.getElementById("aluno")
+        const inserir = document.getElementById("inserir")
+        const media = document.getElementById("media")
+
+        function mostrarAluno() {
+            const aluno = prompt("Qual é o aluno?")
+            nome.innerHTML = aluno
+            inserir.style = "block"
+        }
+
+        function inserirNotas() {
+            const qtd = parseInt(prompt("Quantas notas serão inseridas?"))
+
+            if (isNaN(qtd)){
+                throw Error ("Insira somente números")
+                return
+            } else if (qtd < 0 || qtd == 0){
+                throw Error ("Insira somente números maiores que 0")
+                return
+            }
+
+            const nota = []
+            let i
+            for (i = 0; i < qtd; i++) {
+                nota.push(parseInt(prompt("Insira a nota")))
+            }
+
+            console.log(nota)
+
+            let soma = 0;
+            for (i = 0; i < nota.length; i++) {
+                soma += nota[i]
+            }
+
+            console.log(soma)
+
+            let calcMedia = (soma / qtd)
+
+            console.log(media)
+
+            media.innerHTML = `Média: ${calcMedia}`
+        }
+
+    </script>
+
+</body>
+
+</html>

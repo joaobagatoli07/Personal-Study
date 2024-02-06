@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+
+<body>
+
+    <h1>Vamos calcular seu IMC? 🤩</h1>
+
+    <button onclick="calcImc()">Começar cálculo</button>
+
+    <h2 id="IMC"></h2>
+
+    <h3 id="classificacao"></h3>
+
+    <script>
+
+        const domIMC = document.getElementById("IMC")
+        const domClass = document.getElementById("classificacao")
+
+        let imc = 0;
+
+        function calcImc() {
+            let peso = parseInt(prompt("Informe seu peso (kg)"))
+            let altura = parseFloat(prompt("Informe sua altura (m)"))
+
+            if (isNaN(peso) || isNaN(altura)) {
+                throw Error("Insira somente números")
+                return
+            }
+
+            imc = (peso / (altura ** 2)).toFixed(1)
+
+            domIMC.innerHTML = `IMC: ${imc}`
+
+            classImc()
+        }
+
+        function classImc() {
+            if (imc <= 16.9) {
+                domClass.innerHTML = "Muito abaixo do peso"
+            } else if (imc <= 18.4) {
+                domClass.innerHTML = "Abaixo do peso"
+            } else if (imc <= 24.9) {
+                domClass.innerHTML = "Peso normal"
+            } else if (imc <= 29.9) {
+                domClass.innerHTML = "Acima do peso"
+            } else if (imc <= 34.9) {
+                domClass.innerHTML = "Obesidade Grau I"
+            } else if (imc <= 40) {
+                domClass.innerHTML = "Obesidade Grau II"
+            } else {
+                domClass.innerHTML = "Obesidade Grau III"
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
