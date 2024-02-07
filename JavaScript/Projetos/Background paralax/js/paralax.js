@@ -19,6 +19,8 @@
 
             if(isGettingOut(element)){
                 element.style.backgroundPosition = `${originalXPosition} ${getNewPosition(element)}px`
+            }else{
+                element.style.backgroundPosition = `${originalXPosition} 0px`
             }
         })
     }
