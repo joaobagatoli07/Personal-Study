@@ -1,3 +1,10 @@
+class Cliente {
+    constructor(nome, documento) {
+        this.nome = nome
+        this.documento = documento
+    }
+}
+
 class ContaBancaria {
     constructor(cliente, numero) {
 
@@ -25,11 +32,11 @@ class ContaCorrente extends ContaBancaria {
         this.limite = 0
     }
 
-    sacar(valor){
+    sacar(valor) {
         let disponivel = this.saldo + this.limite
-        if(valor > disponivel){
+        if (valor > disponivel) {
             throw Error("Saldo insuficiente")
-        }else{
+        } else {
             this.saldo -= valor
         }
     }
@@ -41,24 +48,19 @@ class ContaPoupanca extends ContaBancaria {
         this.aniversario = new Date()
     }
 
-    sacar(valor){
-        if(valor > this.saldo){
+    sacar(valor) {
+        if (valor > this.saldo) {
             throw Error("Saldo insuficiente")
-        }else{
+        } else {
             this.saldo -= valor
         }
     }
 }
 
-const cc = new ContaCorrente("Daniel", 5)
+// TESTES
 
-const cp1 = new ContaPoupanca("João", 7)
-const cp2 = new ContaPoupanca("Maria", 2)
+const joao = new Cliente("João", 123) 
+const maria = new Cliente("Maria", 456)
 
-cp1.depositar(1000)
-cc.depositar(2000)
-cc.limite = 1000
-cc.sacar(500)
-cc.sacar(3000)
-cp2.depositar(3000)
-cp2.sacar(1000)
+const cc = new ContaCorrente(joao, 7)
+const cp = new ContaPoupanca(maria, 2)
