@@ -1,7 +1,25 @@
 class Cliente {
-    constructor(nome, documento) {
+    constructor(nome, documento, tipoDocumento) {
+
+        if (this.constructor === Cliente) {
+            throw Error("Essa é uma classe abstrata")
+        }
+
         this.nome = nome
         this.documento = documento
+        this.tipoDocumento = tipoDocumento
+    }
+}
+
+class PessoaFisica extends Cliente{
+    constructor(nome, documento){
+        super(nome, documento, "CPF")
+    }
+}
+
+class PessoaJuridica extends Cliente{
+    constructor(nome, documento){
+        super(nome, documento, "CNPJ")
     }
 }
 
@@ -15,6 +33,10 @@ class ContaBancaria {
         this.cliente = cliente
         this.numero = numero
         this.saldo = 0
+    }
+
+    get dadosCliente(){
+        return `${this.cliente.nome}, ${this.cliente.tipoDocumento}: ${this.cliente.documento}`
     }
 
     depositar(valor) {
@@ -59,8 +81,8 @@ class ContaPoupanca extends ContaBancaria {
 
 // TESTES
 
-const joao = new Cliente("João", 123) 
-const maria = new Cliente("Maria", 456)
+const joao = new PessoaFisica("João", "134.091.360-11")
+const kidsGraca = new PessoaJuridica("KidsGraca", "122.133.144/0001-01")
 
 const cc = new ContaCorrente(joao, 7)
-const cp = new ContaPoupanca(maria, 2)
+const cp = new ContaPoupanca(kidsGraca, 2)
