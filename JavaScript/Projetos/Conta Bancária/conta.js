@@ -90,7 +90,7 @@ class Transferir {
             contaOrigem.sacar(valor)
             contaDestino.depositar(valor)
         }catch(e){
-            throw Error("Algo deu errado...", e.message)
+            throw Error(e)
         }
     }
 }
