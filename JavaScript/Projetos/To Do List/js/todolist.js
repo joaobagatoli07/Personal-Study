@@ -8,7 +8,7 @@
     const ul = document.getElementById("todo-list") // Lista não ordenada (ul) para exibir as tarefas
     const li = ul.getElementsByTagName("li") // Lista de elementos li existentes na ul
 
-    // Array de tarefas
+    // Array de tarefa
     let arrTasks = getSavedData()
 
     // Função para obter dados salvos do armazenamento local ou fornecer um padrão se não houver dados salvos
