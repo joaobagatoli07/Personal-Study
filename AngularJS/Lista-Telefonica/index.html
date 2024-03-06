@@ -14,18 +14,18 @@
         var app = angular.module("listaTelefonica", [])
 
         app.controller("listaTelefonicaCtrl", function ($scope) {
-            $scope.app = "Lista Telefonica"
+            $scope.app = "Lista Telefônica"
             $scope.contatos = [
-                { nome: "Pedro", telefone: "95247-8915", cor: "blue" },
-                { nome: "Ana", telefone: "94638-1722", cor: "yellow" },
-                { nome: "Maria", telefone: "96543-1881", cor: "red" }
+                { nome: "Pedro", telefone: "95247-8915", data: new Date(), operadora: { nome: "Oi", codigo: 14, categoria: "Celular" } },
+                { nome: "Ana", telefone: "94638-1722", data: new Date(), operadora: { nome: "Vivo", codigo: 15, categoria: "Celular" } },
+                { nome: "Maria", telefone: "96543-1881", data: new Date(), operadora: { nome: "Tim", codigo: 41, categoria: "Celular" } }
             ]
             $scope.operadoras = [
-                { nome: "Oi", codigo: 14, categoria: "Celular" },
-                { nome: "Vivo", codigo: 15, categoria: "Celular" },
-                { nome: "Tim", codigo: 41, categoria: "Celular" },
-                { nome: "GVT", codigo: 25, categoria: "Fixo" },
-                { nome: "Embratel", codigo: 21, categoria: "Fixo" }
+                { nome: "Oi", codigo: 14, categoria: "Celular", preco: 2 },
+                { nome: "Vivo", codigo: 15, categoria: "Celular", preco: 1 },
+                { nome: "Tim", codigo: 41, categoria: "Celular", preco: 3 },
+                { nome: "GVT", codigo: 25, categoria: "Fixo", preco: 1 },
+                { nome: "Embratel", codigo: 21, categoria: "Fixo", preco: 2 }
             ]
             $scope.adicionarContato = function (contato) {
                 $scope.contatos.push(angular.copy(contato))
@@ -41,6 +41,10 @@
                 return contatos.some(function (contato) {
                     return contato.selecionado
                 })
+            }
+            $scope.ordenarPor = function (campo) {
+                $scope.criterioOrdenacao = campo
+                $scope.direcaoOrdenacao = !$scope.direcaoOrdenacao
             }
         })
 
@@ -58,28 +62,32 @@
     <main class="d-flex flex-column align-items-center">
         <h4 class="mt-5" ng-bind="app"></h4>
 
-        <div class="mt-4" style="width:25%">
+        <div class="mt-4" style="width:30%">
+
+            <input class="form-control mb-3" type="text" ng-model="busca" placeholder="O que você está buscando?">
 
             <table class="table" ng-show="contatos.length > 0">
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Nome</th>
-                        <th>Telefone</th>
+                        <th><a href="" ng-click="ordenarPor('nome')">Nome</a></th>
+                        <th><a href="" ng-click="ordenarPor('telefone')">Telefone</a></th>
                         <th>Operadora</th>
-                        <th></th>
+                        <th>Data</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    <tr ng-class="{'table-success': contato.selecionado}" ng-repeat="contato in contatos">
+                    <tr ng-class="{'table-success': contato.selecionado}"
+                        ng-repeat="contato in contatos | filter: busca | orderBy: criterioOrdenacao: direcaoOrdenacao">
                         <td><input type="checkbox" ng-model="contato.selecionado"></td>
-                        <td>{{contato.nome}}</td>
+                        <td>{{contato.nome | uppercase}}</td>
                         <td>{{contato.telefone}}</td>
-                        <td>{{contato.operadora.nome}}</td>
-                        <td>
+                        <td>{{contato.operadora.nome | lowercase}}</td>
+                        <!-- <td>
                             <div style="width: 20px; height: 20px" ng-style="{'background-color': contato.cor}"></div>
-                        </td>
+                        </td> -->
+                        <td>{{contato.data | date:'dd/MM/yyyy HH:mm'}}</td>
                     </tr>
                 </tbody>
             </table>
@@ -87,18 +95,19 @@
             <div>
 
                 <form action="" name="contatoForm">
-                    <input class="form-control user-info-field mb-2" type="text" ng-model="contato.nome" name="nome"
-                        placeholder="Nome" ng-required="true" ng-minlength="10">
+                    <input class="form-control mb-2" type="text" ng-model="contato.nome" name="nome" placeholder="Nome"
+                        ng-required="true" ng-minlength="10">
 
-                    <input class="form-control user-info-field mb-2" type="text" ng-model="contato.telefone"
-                        name="telefone" placeholder="Telefone" ng-required="true" ng-pattern="/^\d{4,5}-\d{4}$/">
+                    <input class="form-control mb-2" type="text" ng-model="contato.telefone" name="telefone"
+                        placeholder="Telefone" ng-required="true" ng-pattern="/^\d{4,5}-\d{4}$/">
 
                     <select class="form-select mb-3" ng-model="contato.operadora"
-                        ng-options="operadora.nome group by operadora.categoria for operadora in operadoras">
+                        ng-options="operadora.nome + ' ( ' + (operadora.preco | currency) + ' ) ' for operadora in operadoras | orderBy: 'nome'">
                         <option value="">Selecione uma operadora</option>
                     </select>
 
-                    <div ng-show="contatoForm.nome.$error.required && contatoForm.nome.$dirty" class="alert alert-danger">
+                    <div ng-show="contatoForm.nome.$error.required && contatoForm.nome.$dirty"
+                        class="alert alert-danger">
                         Preencha o campo nome
                     </div>
 
@@ -106,7 +115,8 @@
                         O campo nome deve ter no mínimo 10 caracteres
                     </div>
 
-                    <div ng-show="contatoForm.telefone.$error.required && contatoForm.telefone.$dirty" class="alert alert-danger mt-3">
+                    <div ng-show="contatoForm.telefone.$error.required && contatoForm.telefone.$dirty"
+                        class="alert alert-danger mt-3">
                         Preencha o campo telefone
                     </div>
 
@@ -115,8 +125,8 @@
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary"
-                            ng-click="adicionarContato(contato)" ng-disabled="contatoForm.$invalid">Adicionar
+                        <button class="btn btn-primary" ng-click="adicionarContato(contato)"
+                            ng-disabled="contatoForm.$invalid">Adicionar
                             contato</button>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -124,7 +134,7 @@
                             ng-hide="!isContatoSelecionado(contatos)">Apagar contatos</button>
                     </div>
                 </form>
-
+                
                 <div ng-include="'footer.html'"></div>
             </div>
         </div>
