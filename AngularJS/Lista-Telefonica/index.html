@@ -13,24 +13,34 @@
     <script>
         var app = angular.module("listaTelefonica", [])
 
-        app.controller("listaTelefonicaCtrl", function ($scope, $filter) {
+        app.controller("listaTelefonicaCtrl", function ($scope, $filter, $http) {
             $scope.app = "Lista Telefônica"
-            $scope.contatos = [
-                { nome: $filter('uppercase')("Pedro"), telefone: "95247-8915", data: new Date(), operadora: { nome: "Oi", codigo: 14, categoria: "Celular" } },
-                { nome: "Ana", telefone: "94638-1722", data: new Date(), operadora: { nome: "Vivo", codigo: 15, categoria: "Celular" } },
-                { nome: "Maria", telefone: "96543-1881", data: new Date(), operadora: { nome: "Tim", codigo: 41, categoria: "Celular" } }
-            ]
-            $scope.operadoras = [
-                { nome: "Oi", codigo: 14, categoria: "Celular", preco: 2 },
-                { nome: "Vivo", codigo: 15, categoria: "Celular", preco: 1 },
-                { nome: "Tim", codigo: 41, categoria: "Celular", preco: 3 },
-                { nome: "GVT", codigo: 25, categoria: "Fixo", preco: 1 },
-                { nome: "Embratel", codigo: 21, categoria: "Fixo", preco: 2 }
-            ]
+
+            $scope.contatos = []
+            $scope.operadoras = []
+
+            let carregarContatos = () => {
+                $http.get("http://localhost:3412/contatos").then(function (response) {
+                    $scope.contatos = response.data;
+                }).catch(function(response){
+                    $scope.message = "Algo deu errado: " + response.data
+                })
+            }
+
+            let carregarOperadoras = () => {
+                $http.get("http://localhost:3412/operadoras").then(function (response) {
+                    $scope.operadoras = response.data
+                })
+            }
+
             $scope.adicionarContato = function (contato) {
-                $scope.contatos.push(angular.copy(contato))
-                delete $scope.contato
-                $scope.contatoForm.$setPristine()
+                // $scope.contatos.push(angular.copy(contato))
+                $http.post("http://localhost:3412/contatos", contato).then(function (response) {
+                    delete $scope.contato
+                    $scope.contatoForm.$setPristine()
+                    carregarContatos()
+                    $scope.contatos.push(response.data)
+                })
             }
             $scope.apagarContatos = function (contatos) {
                 $scope.contatos = contatos.filter(function (contato) {
@@ -46,6 +56,8 @@
                 $scope.criterioOrdenacao = campo
                 $scope.direcaoOrdenacao = !$scope.direcaoOrdenacao
             }
+
+            carregarContatos()
         })
 
     </script>
@@ -55,8 +67,8 @@
             width: 100%;
         }
 
-        a{
-          text-decoration: none;  
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -65,6 +77,8 @@
 
     <main class="d-flex flex-column align-items-center">
         <h4 class="mt-5" ng-bind="app"></h4>
+
+        {{message}}
 
         <div class="mt-4" style="width:30%">
 
