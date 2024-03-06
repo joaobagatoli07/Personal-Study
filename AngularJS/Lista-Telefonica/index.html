@@ -13,10 +13,10 @@
     <script>
         var app = angular.module("listaTelefonica", [])
 
-        app.controller("listaTelefonicaCtrl", function ($scope) {
+        app.controller("listaTelefonicaCtrl", function ($scope, $filter) {
             $scope.app = "Lista Telefônica"
             $scope.contatos = [
-                { nome: "Pedro", telefone: "95247-8915", data: new Date(), operadora: { nome: "Oi", codigo: 14, categoria: "Celular" } },
+                { nome: $filter('uppercase')("Pedro"), telefone: "95247-8915", data: new Date(), operadora: { nome: "Oi", codigo: 14, categoria: "Celular" } },
                 { nome: "Ana", telefone: "94638-1722", data: new Date(), operadora: { nome: "Vivo", codigo: 15, categoria: "Celular" } },
                 { nome: "Maria", telefone: "96543-1881", data: new Date(), operadora: { nome: "Tim", codigo: 41, categoria: "Celular" } }
             ]
@@ -54,6 +54,10 @@
         button {
             width: 100%;
         }
+
+        a{
+          text-decoration: none;  
+        }
     </style>
 </head>
 
@@ -81,7 +85,7 @@
                     <tr ng-class="{'table-success': contato.selecionado}"
                         ng-repeat="contato in contatos | filter: busca | orderBy: criterioOrdenacao: direcaoOrdenacao">
                         <td><input type="checkbox" ng-model="contato.selecionado"></td>
-                        <td>{{contato.nome | uppercase}}</td>
+                        <td>{{contato.nome}}</td>
                         <td>{{contato.telefone}}</td>
                         <td>{{contato.operadora.nome | lowercase}}</td>
                         <!-- <td>
@@ -134,7 +138,7 @@
                             ng-hide="!isContatoSelecionado(contatos)">Apagar contatos</button>
                     </div>
                 </form>
-                
+
                 <div ng-include="'footer.html'"></div>
             </div>
         </div>
