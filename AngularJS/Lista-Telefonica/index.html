@@ -8,69 +8,11 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/listaTelefonicaCtrl.js"></script>
 
-    <script>
-        var app = angular.module("listaTelefonica", [])
-
-        app.controller("listaTelefonicaCtrl", function ($scope, $filter, $http) {
-            $scope.app = "Lista Telefônica"
-
-            $scope.contatos = []
-            $scope.operadoras = []
-
-            let carregarContatos = () => {
-                $http.get("http://localhost:3412/contatos").then(function (response) {
-                    $scope.contatos = response.data;
-                }).catch(function(response){
-                    $scope.message = "Algo deu errado: " + response.data
-                })
-            }
-
-            let carregarOperadoras = () => {
-                $http.get("http://localhost:3412/operadoras").then(function (response) {
-                    $scope.operadoras = response.data
-                })
-            }
-
-            $scope.adicionarContato = function (contato) {
-                // $scope.contatos.push(angular.copy(contato))
-                $http.post("http://localhost:3412/contatos", contato).then(function (response) {
-                    delete $scope.contato
-                    $scope.contatoForm.$setPristine()
-                    carregarContatos()
-                    $scope.contatos.push(response.data)
-                })
-            }
-            $scope.apagarContatos = function (contatos) {
-                $scope.contatos = contatos.filter(function (contato) {
-                    if (!contato.selecionado) return contato
-                })
-            }
-            $scope.isContatoSelecionado = function (contatos) {
-                return contatos.some(function (contato) {
-                    return contato.selecionado
-                })
-            }
-            $scope.ordenarPor = function (campo) {
-                $scope.criterioOrdenacao = campo
-                $scope.direcaoOrdenacao = !$scope.direcaoOrdenacao
-            }
-
-            carregarContatos()
-        })
-
-    </script>
-
-    <style>
-        button {
-            width: 100%;
-        }
-
-        a {
-            text-decoration: none;
-        }
-    </style>
 </head>
 
 <body ng-controller="listaTelefonicaCtrl">
@@ -153,7 +95,7 @@
                     </div>
                 </form>
 
-                <div ng-include="'footer.html'"></div>
+                <div ng-include="'view/footer.html'"></div>
             </div>
         </div>
     </main>
