@@ -1,8 +1,10 @@
 var express = require('express');
+const bodyParser = require('body-parser');
 var app = express();
 
 app.use(express.static(__dirname + '/public'));
-app.use(express.bodyParser());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 var contatos = [
 	{nome: "Bruno", telefone: "9999-2222", data: new Date(), operadora: {nome: "Oi", codigo: 14, categoria: "Celular"}},
@@ -17,7 +19,10 @@ var operadoras = [
 	{nome: "Embratel", codigo: 21, categoria: "Fixo", preco: 2}
 ];
 
-app.listen(process.env.PORT || 3412);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function () {
+  console.log(`Servidor rodando em http://localhost:${PORT}`);
+});
 
 app.all('*', function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
