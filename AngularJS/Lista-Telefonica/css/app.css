@@ -5,3 +5,11 @@ button {
 a {
     text-decoration: none;
 }
+
+section{
+    width: 60%;
+}
+
+.serialCol{
+    text-align: center;
+}
