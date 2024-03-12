@@ -8,7 +8,7 @@ app.controller("listaTelefonicaCtrl", function ($scope, contatosAPI, operadorasA
         contatosAPI.getContatos().then(function (response) {
             $scope.contatos = response.data;
         }).catch(function(response){
-            $scope.message = "Algo deu errado: " + response.data
+            $scope.error = "Não foi possível carregar os dados"
         })
     }
 
