@@ -3,6 +3,9 @@ app.controller("listaTelefonicaCtrl", function ($scope, contatosAPI, operadorasA
 
     $scope.contatos = []
     $scope.operadoras = []
+    $scope.contato = {
+        data: new Date()
+    }
 
     let carregarContatos = () => {
         contatosAPI.getContatos().then(function (response) {
