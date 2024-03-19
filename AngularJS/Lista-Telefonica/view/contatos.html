@@ -1,0 +1,59 @@
+<main class="d-flex flex-column align-items-center">
+    <h4 class="mt-5" ng-bind="app"></h4>
+
+    <!-- <ui-accordions>
+        <ui-accordion title="Accordion 1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorem, ex mollitia, iste adipisci
+            veritatis amet vero quos doloremque, quaerat porro! Blanditiis eum numquam, nobis ut unde expedita
+            incidunt
+            assumenda.
+        </ui-accordion>
+
+        <ui-accordion title="Accordion 2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vel illo vitae reprehenderit quibusdam
+            officiis corporis quam itaque, quae maiores adipisci harum, doloribus tenetur minima aspernatur a
+            ducimus
+            architecto laudantium!
+        </ui-accordion>
+    </ui-accordions> -->
+
+    <!-- <ui-alert title="Ops, aconteceu um problema!">
+        Não foi possível carregar os dados
+    </ui-alert> -->
+
+    <section class="mt-4">
+
+        <input class="form-control mb-3" type="text" ng-model="busca" placeholder="O que você está buscando?">
+
+        <table class="table" ng-show="contatos.length > 0">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="serialCol">Serial</th>
+                    <th><a href="" ng-click="ordenarPor('nome')">Nome</a></th>
+                    <th><a href="" ng-click="ordenarPor('telefone')">Telefone</a></th>
+                    <th>Operadora</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr ng-class="{'table-success': contato.selecionado}"
+                    ng-repeat="contato in contatos | filter: busca | orderBy: criterioOrdenacao: direcaoOrdenacao">
+                    <td><input type="checkbox" ng-model="contato.selecionado"></td>
+                    <td class="serialCol">{{contato.serial}}</td>
+                    <!-- <td>{{contato.nome | name | ellipsis:10}}</td> -->
+                    <td><a href="#/detalhesContato/{{contato.id}}">{{contato.nome | name}}</a></td>
+                    <td>{{contato.telefone}}</td>
+                    <td>{{contato.operadora.nome | lowercase}}</td>
+                    <!-- <td>
+                        <div style="width: 20px; height: 20px" ng-style="{'background-color': contato.cor}"></div>
+                    </td> -->
+                    <td>{{contato.data | date:'dd/MM/yyyy HH:mm'}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="#/novoContato" class="btn btn-primary"></a>
+        <div></div>
+    </section>
+</main>

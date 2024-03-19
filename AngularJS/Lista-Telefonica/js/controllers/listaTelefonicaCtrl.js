@@ -1,26 +1,16 @@
-app.controller("listaTelefonicaCtrl", function ($scope, contatosAPI, operadorasAPI, serialGenerator) {
+app.controller("listaTelefonicaCtrl", function ($scope, contatos, operadoras, serialGenerator) {
     $scope.app = "Lista Telefônica"
 
-    $scope.contatos = []
-    $scope.operadoras = []
+    $scope.contatos = contatos.data
+    $scope.operadoras = operadoras.data
     $scope.contato = {
         data: new Date()
     }
-
-    let carregarContatos = () => {
-        contatosAPI.getContatos().then(function (response) {
-            $scope.contatos = response.data;
-        }).catch(function(response){
-            $scope.error = "Não foi possível carregar os dados"
+    let generateSerial = contatos => {
+        contatos.forEach(function (item) {
+            item.serial = serialGenerator.generate()
         })
     }
-
-    let carregarOperadoras = () => {
-        operadorasAPI.getOperadoras().then(function (response) {
-            $scope.operadoras = response.data
-        })
-    }
-
     $scope.adicionarContato = function (contato) {
         contato.serial = serialGenerator.generate()
         contato.data = new Date()
@@ -44,7 +34,4 @@ app.controller("listaTelefonicaCtrl", function ($scope, contatosAPI, operadorasA
         $scope.criterioOrdenacao = campo
         $scope.direcaoOrdenacao = !$scope.direcaoOrdenacao
     }
-
-    carregarContatos()
-    carregarOperadoras()
 })

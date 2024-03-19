@@ -1,1 +1,1 @@
-var app = angular.module("listaTelefonica", ["serialGenerator", "ui"])
+var app = angular.module("listaTelefonica", ["serialGenerator", "ui", "ngRoute"])
