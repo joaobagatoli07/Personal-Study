@@ -41,11 +41,11 @@
                 <tr ng-class="{'table-success': contato.selecionado}"
                     ng-repeat="contato in contatos | filter: busca | orderBy: criterioOrdenacao: direcaoOrdenacao">
                     <td><input type="checkbox" ng-model="contato.selecionado"></td>
-                    <td class="serialCol">{{contato.serial}}</td>
+                    <td class="serialCol">{{::contato.serial}}</td>
                     <!-- <td>{{contato.nome | name | ellipsis:10}}</td> -->
-                    <td><a href="#/detalhesContato/{{contato.id}}">{{contato.nome | name}}</a></td>
-                    <td>{{contato.telefone}}</td>
-                    <td>{{contato.operadora.nome | lowercase}}</td>
+                    <td><a href="#/detalhesContato/{{contato.id}}">{{::contato.nome | name}}</a></td>
+                    <td>{{::contato.telefone}}</td>
+                    <td>{{::contato.operadora.nome | lowercase}}</td>
                     <!-- <td>
                         <div style="width: 20px; height: 20px" ng-style="{'background-color': contato.cor}"></div>
                     </td> -->
