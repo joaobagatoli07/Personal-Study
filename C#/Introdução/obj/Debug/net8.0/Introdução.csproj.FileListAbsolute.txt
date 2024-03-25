@@ -1,0 +1,15 @@
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\bin\Debug\net8.0\Introdução.exe
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\bin\Debug\net8.0\Introdução.deps.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\bin\Debug\net8.0\Introdução.runtimeconfig.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\bin\Debug\net8.0\Introdução.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\bin\Debug\net8.0\Introdução.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\obj\Debug\net8.0\Introdução.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\obj\Debug\net8.0\Introdução.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\obj\Debug\net8.0\Introdução.AssemblyInfo.cs
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\obj\Debug\net8.0\Introdução.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\obj\Debug\net8.0\Introdução.sourcelink.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\obj\Debug\net8.0\Introdução.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\obj\Debug\net8.0\refint\Introdução.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\obj\Debug\net8.0\Introdução.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\obj\Debug\net8.0\Introdução.genruntimeconfig.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Introdução\obj\Debug\net8.0\ref\Introdução.dll
