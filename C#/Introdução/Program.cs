@@ -6,7 +6,9 @@ namespace Introdução
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string texto = "Hello, World!";
+            Console.WriteLine(texto);
         }
+
     }
 }
