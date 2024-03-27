@@ -12,6 +12,10 @@ namespace VariaveisTiposDeDado
             valorReal = valorInteiro; // 100.0f
 
             valorInteiro = (int)valorReal; // cast
+            
+            int valor = int.Parse("80");
+    
+           
         }
     }
 }
