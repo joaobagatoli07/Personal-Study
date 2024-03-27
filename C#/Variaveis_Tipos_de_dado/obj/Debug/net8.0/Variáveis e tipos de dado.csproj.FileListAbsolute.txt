@@ -1,0 +1,15 @@
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\obj\Debug\net8.0\Variáveis e tipos de dado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\obj\Debug\net8.0\Variáveis e tipos de dado.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\obj\Debug\net8.0\Variáveis e tipos de dado.AssemblyInfo.cs
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\obj\Debug\net8.0\Variáveis e tipos de dado.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\obj\Debug\net8.0\Variáveis e tipos de dado.sourcelink.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\bin\Debug\net8.0\Variáveis e tipos de dado.exe
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\bin\Debug\net8.0\Variáveis e tipos de dado.deps.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\bin\Debug\net8.0\Variáveis e tipos de dado.runtimeconfig.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\bin\Debug\net8.0\Variáveis e tipos de dado.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\bin\Debug\net8.0\Variáveis e tipos de dado.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\obj\Debug\net8.0\Variáveis e tipos de dado.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\obj\Debug\net8.0\refint\Variáveis e tipos de dado.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\obj\Debug\net8.0\Variáveis e tipos de dado.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\obj\Debug\net8.0\Variáveis e tipos de dado.genruntimeconfig.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Variaveis_Tipos_de_dado\obj\Debug\net8.0\ref\Variáveis e tipos de dado.dll

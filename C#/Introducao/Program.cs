@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Introdução
+namespace Introducao
 {
     class Program
     {
