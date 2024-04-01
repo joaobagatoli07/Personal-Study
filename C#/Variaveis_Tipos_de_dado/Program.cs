@@ -14,8 +14,6 @@ namespace VariaveisTiposDeDado
             valorInteiro = (int)valorReal; // cast
             
             int valor = int.Parse("80");
-    
-           
         }
     }
 }
