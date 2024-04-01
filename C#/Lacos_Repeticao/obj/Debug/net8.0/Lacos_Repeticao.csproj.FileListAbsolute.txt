@@ -1,0 +1,15 @@
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\bin\Debug\net8.0\Lacos_Repeticao.exe
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\bin\Debug\net8.0\Lacos_Repeticao.deps.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\bin\Debug\net8.0\Lacos_Repeticao.runtimeconfig.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\bin\Debug\net8.0\Lacos_Repeticao.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\bin\Debug\net8.0\Lacos_Repeticao.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\obj\Debug\net8.0\Lacos_Repeticao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\obj\Debug\net8.0\Lacos_Repeticao.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\obj\Debug\net8.0\Lacos_Repeticao.AssemblyInfo.cs
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\obj\Debug\net8.0\Lacos_Repeticao.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\obj\Debug\net8.0\Lacos_Repeticao.sourcelink.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\obj\Debug\net8.0\Lacos_Repeticao.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\obj\Debug\net8.0\refint\Lacos_Repeticao.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\obj\Debug\net8.0\Lacos_Repeticao.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\obj\Debug\net8.0\Lacos_Repeticao.genruntimeconfig.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Lacos_Repeticao\obj\Debug\net8.0\ref\Lacos_Repeticao.dll
