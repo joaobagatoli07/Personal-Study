@@ -1,0 +1,15 @@
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\obj\Debug\net8.0\Funcoes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\obj\Debug\net8.0\Funcoes.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\obj\Debug\net8.0\Funcoes.AssemblyInfo.cs
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\obj\Debug\net8.0\Funcoes.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\obj\Debug\net8.0\Funcoes.sourcelink.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\bin\Debug\net8.0\Funcoes.exe
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\bin\Debug\net8.0\Funcoes.deps.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\bin\Debug\net8.0\Funcoes.runtimeconfig.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\bin\Debug\net8.0\Funcoes.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\bin\Debug\net8.0\Funcoes.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\obj\Debug\net8.0\Funcoes.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\obj\Debug\net8.0\refint\Funcoes.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\obj\Debug\net8.0\Funcoes.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\obj\Debug\net8.0\Funcoes.genruntimeconfig.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Funcoes\obj\Debug\net8.0\ref\Funcoes.dll
