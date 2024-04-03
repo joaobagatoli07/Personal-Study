@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\joaov\\.nuget\\packages\\": {}
+    "C:\\Users\\Developer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joaov\\Desktop\\Personal-Study\\C#\\Condicionais\\Condicionais.csproj",
+      "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Personal-Study\\C#\\Condicionais\\Condicionais.csproj",
       "projectName": "Condicionais",
-      "projectPath": "C:\\Users\\joaov\\Desktop\\Personal-Study\\C#\\Condicionais\\Condicionais.csproj",
-      "packagesPath": "C:\\Users\\joaov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joaov\\Desktop\\Personal-Study\\C#\\Condicionais\\obj\\",
+      "projectPath": "C:\\Users\\Developer\\Desktop\\Personal-Study\\C#\\Condicionais\\Condicionais.csproj",
+      "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Developer\\Desktop\\Personal-Study\\C#\\Condicionais\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\joaov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
