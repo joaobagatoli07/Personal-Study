@@ -15,7 +15,7 @@ class Program
         Console.WriteLine("C# é legal");
     }
 
-    static string Nome(string nome, string sobrenome, int idade)
+    static string Nome(string nome, string sobrenome, int idade = 0)
     {
         return nome + " " + sobrenome;
     }
