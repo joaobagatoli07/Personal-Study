@@ -1,0 +1,15 @@
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\obj\Debug\net8.0\Enums.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\obj\Debug\net8.0\Enums.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\obj\Debug\net8.0\Enums.AssemblyInfo.cs
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\obj\Debug\net8.0\Enums.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\obj\Debug\net8.0\Enums.sourcelink.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\bin\Debug\net8.0\Enums.exe
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\bin\Debug\net8.0\Enums.deps.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\bin\Debug\net8.0\Enums.runtimeconfig.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\bin\Debug\net8.0\Enums.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\bin\Debug\net8.0\Enums.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\obj\Debug\net8.0\Enums.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\obj\Debug\net8.0\refint\Enums.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\obj\Debug\net8.0\Enums.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\obj\Debug\net8.0\Enums.genruntimeconfig.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Enums\obj\Debug\net8.0\ref\Enums.dll
