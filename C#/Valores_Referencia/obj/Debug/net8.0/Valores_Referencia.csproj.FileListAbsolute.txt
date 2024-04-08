@@ -1,0 +1,15 @@
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\bin\Debug\net8.0\Valores_Referencia.exe
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\bin\Debug\net8.0\Valores_Referencia.deps.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\bin\Debug\net8.0\Valores_Referencia.runtimeconfig.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\bin\Debug\net8.0\Valores_Referencia.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\bin\Debug\net8.0\Valores_Referencia.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\obj\Debug\net8.0\Valores_Referencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\obj\Debug\net8.0\Valores_Referencia.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\obj\Debug\net8.0\Valores_Referencia.AssemblyInfo.cs
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\obj\Debug\net8.0\Valores_Referencia.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\obj\Debug\net8.0\Valores_Referencia.sourcelink.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\obj\Debug\net8.0\Valores_Referencia.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\obj\Debug\net8.0\refint\Valores_Referencia.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\obj\Debug\net8.0\Valores_Referencia.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\obj\Debug\net8.0\Valores_Referencia.genruntimeconfig.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Valores_Referencia\obj\Debug\net8.0\ref\Valores_Referencia.dll
