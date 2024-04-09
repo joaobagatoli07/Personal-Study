@@ -1,0 +1,20 @@
+:root {
+    --color-blue: blue;
+    --color-green: green;
+    --color-orange: orange;
+    --margin: 10px; 
+}
+
+.logo{
+    margin: var(--margin);
+    background-color: var(--color-blue);
+}
+
+body {
+    background-color: rgb(59, 58, 58);
+    color: white;
+}
+
+h1 {
+    color: yellow;
+}
