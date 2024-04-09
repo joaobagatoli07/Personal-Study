@@ -8,6 +8,8 @@
 .logo{
     margin: var(--margin);
     background-color: var(--color-blue);
+    width: 50%;
+    text-align: center;
 }
 
 body {
@@ -16,5 +18,5 @@ body {
 }
 
 h1 {
-    color: yellow;
+    color: var(--color-orange);
 }
