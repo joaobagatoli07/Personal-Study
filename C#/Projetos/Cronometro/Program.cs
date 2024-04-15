@@ -16,13 +16,22 @@ namespace StopWatch
 
             Console.WriteLine("--- CRONOMETRO ---");
 
-            Console.WriteLine("Escolha a métrica");
-            Console.WriteLine("S = Segundos");
-            Console.WriteLine("M = Minutos");
-            string metrica = Console.ReadLine();
+            Console.WriteLine("Insira a inicial da medida");
+            Console.WriteLine("S => Segundos");
+            Console.WriteLine("M => Minutos");
+            char measure = char.Parse(Console.ReadLine());
+            measure = char.ToUpper(measure);
 
             Console.WriteLine("Quanto tempo você deseja contar?");
             int time = int.Parse(Console.ReadLine());
+
+            if (measure == 'M')
+                time *= 60;
+
+            if (time == 0)
+                System.Environment.Exit(0);
+
+            Start(time);
         }
 
         static void Start(int time)
@@ -40,6 +49,7 @@ namespace StopWatch
             Console.Clear();
             Console.WriteLine("Cronometro finalizado");
             Thread.Sleep(2500);
+            Menu();
         }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Developer\\Desktop\\Personal-Study\\C#\\Projetos\\Cronometro\\Cronometro.csproj": {}
+    "C:\\Users\\joaov\\Desktop\\Personal-Study\\C#\\Projetos\\Cronometro\\Cronometro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Developer\\Desktop\\Personal-Study\\C#\\Projetos\\Cronometro\\Cronometro.csproj": {
+    "C:\\Users\\joaov\\Desktop\\Personal-Study\\C#\\Projetos\\Cronometro\\Cronometro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Personal-Study\\C#\\Projetos\\Cronometro\\Cronometro.csproj",
+        "projectUniqueName": "C:\\Users\\joaov\\Desktop\\Personal-Study\\C#\\Projetos\\Cronometro\\Cronometro.csproj",
         "projectName": "Cronometro",
-        "projectPath": "C:\\Users\\Developer\\Desktop\\Personal-Study\\C#\\Projetos\\Cronometro\\Cronometro.csproj",
-        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\Desktop\\Personal-Study\\C#\\Projetos\\Cronometro\\obj\\",
+        "projectPath": "C:\\Users\\joaov\\Desktop\\Personal-Study\\C#\\Projetos\\Cronometro\\Cronometro.csproj",
+        "packagesPath": "C:\\Users\\joaov\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaov\\Desktop\\Personal-Study\\C#\\Projetos\\Cronometro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joaov\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
