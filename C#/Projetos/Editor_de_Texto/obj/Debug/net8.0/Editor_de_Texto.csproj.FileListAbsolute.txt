@@ -1,0 +1,15 @@
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\bin\Debug\net8.0\Editor_de_Texto.exe
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\bin\Debug\net8.0\Editor_de_Texto.deps.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\bin\Debug\net8.0\Editor_de_Texto.runtimeconfig.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\bin\Debug\net8.0\Editor_de_Texto.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\bin\Debug\net8.0\Editor_de_Texto.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\obj\Debug\net8.0\Editor_de_Texto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\obj\Debug\net8.0\Editor_de_Texto.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\obj\Debug\net8.0\Editor_de_Texto.AssemblyInfo.cs
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\obj\Debug\net8.0\Editor_de_Texto.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\obj\Debug\net8.0\Editor_de_Texto.sourcelink.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\obj\Debug\net8.0\Editor_de_Texto.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\obj\Debug\net8.0\refint\Editor_de_Texto.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\obj\Debug\net8.0\Editor_de_Texto.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\obj\Debug\net8.0\Editor_de_Texto.genruntimeconfig.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_de_Texto\obj\Debug\net8.0\ref\Editor_de_Texto.dll
