@@ -1,0 +1,15 @@
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\bin\Debug\net8.0\Editor_HTML.exe
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\bin\Debug\net8.0\Editor_HTML.deps.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\bin\Debug\net8.0\Editor_HTML.runtimeconfig.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\bin\Debug\net8.0\Editor_HTML.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\bin\Debug\net8.0\Editor_HTML.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\obj\Debug\net8.0\Editor_HTML.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\obj\Debug\net8.0\Editor_HTML.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\obj\Debug\net8.0\Editor_HTML.AssemblyInfo.cs
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\obj\Debug\net8.0\Editor_HTML.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\obj\Debug\net8.0\Editor_HTML.sourcelink.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\obj\Debug\net8.0\Editor_HTML.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\obj\Debug\net8.0\refint\Editor_HTML.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\obj\Debug\net8.0\Editor_HTML.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\obj\Debug\net8.0\Editor_HTML.genruntimeconfig.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Projetos\Editor_HTML\obj\Debug\net8.0\ref\Editor_HTML.dll
