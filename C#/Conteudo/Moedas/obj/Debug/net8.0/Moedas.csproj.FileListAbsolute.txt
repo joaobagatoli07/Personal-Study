@@ -1,0 +1,15 @@
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\bin\Debug\net8.0\Moedas.exe
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\bin\Debug\net8.0\Moedas.deps.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\bin\Debug\net8.0\Moedas.runtimeconfig.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\bin\Debug\net8.0\Moedas.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\bin\Debug\net8.0\Moedas.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\obj\Debug\net8.0\Moedas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\obj\Debug\net8.0\Moedas.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\obj\Debug\net8.0\Moedas.AssemblyInfo.cs
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\obj\Debug\net8.0\Moedas.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\obj\Debug\net8.0\Moedas.sourcelink.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\obj\Debug\net8.0\Moedas.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\obj\Debug\net8.0\refint\Moedas.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\obj\Debug\net8.0\Moedas.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\obj\Debug\net8.0\Moedas.genruntimeconfig.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Moedas\obj\Debug\net8.0\ref\Moedas.dll
