@@ -1,0 +1,15 @@
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\bin\Debug\net8.0\Array.exe
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\bin\Debug\net8.0\Array.deps.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\bin\Debug\net8.0\Array.runtimeconfig.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\bin\Debug\net8.0\Array.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\bin\Debug\net8.0\Array.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\obj\Debug\net8.0\Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\obj\Debug\net8.0\Array.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\obj\Debug\net8.0\Array.AssemblyInfo.cs
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\obj\Debug\net8.0\Array.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\obj\Debug\net8.0\Array.sourcelink.json
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\obj\Debug\net8.0\Array.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\obj\Debug\net8.0\refint\Array.dll
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\obj\Debug\net8.0\Array.pdb
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\obj\Debug\net8.0\Array.genruntimeconfig.cache
+C:\Users\Developer\Desktop\Personal-Study\C#\Conteudo\Array\obj\Debug\net8.0\ref\Array.dll
