@@ -2,6 +2,8 @@ import "./App.css";
 import HelloWorld from "./components/HelloWorld";
 import SayMyName from "./components/SayMyName";
 import Pessoa from "./components/Pessoa";
+import Frase from "./components/Frase";
+import List from "./components/List";
 
 function App() {
   // let name = "João";
@@ -22,6 +24,8 @@ function App() {
       <img src={url}></img>
       <HelloWorld></HelloWorld>
       <Pessoa nome="Joao" idade="18" profissao="dev"></Pessoa>
+      <Frase></Frase>
+      <List></List>
     </div>
   );
 }
