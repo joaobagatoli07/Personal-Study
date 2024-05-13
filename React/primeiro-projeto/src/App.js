@@ -4,6 +4,8 @@ import SayMyName from "./components/SayMyName";
 import Pessoa from "./components/Pessoa";
 import Frase from "./components/Frase";
 import List from "./components/List";
+import Evento from "./components/Evento";
+import Form from "./components/Form";
 
 function App() {
   // let name = "João";
@@ -26,6 +28,8 @@ function App() {
       <Pessoa nome="Joao" idade="18" profissao="dev"></Pessoa>
       <Frase></Frase>
       <List></List>
+      <Evento></Evento>
+      <Form></Form>
     </div>
   );
 }
